@@ -14,6 +14,13 @@ The system allows users to control the AC remotely via a graphical interface.
 - AC OFF → LED turns OFF
 - Fan Mode → LED blinks
 - Reset → System resets (LED OFF)
+ 
+ ## 🔌 Communication Protocol
+
+- "1" → AC ON (LED ON)
+- "2" → AC OFF (LED OFF)
+- "3" → FAN MODE (LED BLINK)
+- "4" → RESET (LED OFF)
 
 ## 💡 How it works
 The Java application sends commands to Arduino via serial communication.  
