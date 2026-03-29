@@ -95,12 +95,12 @@ Arduino → Java: "FAN MODE"
 - The GUI displays incoming messages in real-time
 
 ---
-
-🖥 GUI Screenshot
+## 🖥️ GUI Screenshot
 
 Below is the graphical user interface of the system:
 
-"GUI" (gui.png.jpeg)
+![GUI](gui.png.jpeg)
+
 
 ---
 
