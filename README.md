@@ -100,7 +100,7 @@ Arduino → Java: "FAN MODE"
 Below is the graphical user interface of the system:
 
 ![GUI](gui.png.jpeg)
-
+The GUI allows users to send commands and view real-time feedback from Arduino.
 
 ---
 
