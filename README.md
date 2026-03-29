@@ -109,9 +109,8 @@ Below is the graphical user interface of the system:
 The Java application sends commands to Arduino via serial communication. Arduino reads these commands, controls the LED accordingly, and sends back status messages to the GUI, which are displayed to the user.
 
 ---
+## 🎯 Purpose
 
-🎯 Purpose
-
-This project demonstrates bidirectional communication between software (Java GUI) and hardware (Arduino) using serial communication.
+This project demonstrates an end-to-end smart AC control system where a Java Swing GUI communicates with an Arduino via serial (USB). It allows users to control the air conditioner and receive real-time feedback from the system.
 
 
