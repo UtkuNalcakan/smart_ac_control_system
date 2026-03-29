@@ -61,9 +61,9 @@ The system uses a simple serial communication protocol between the Java GUI and 
 
 Command| Description| Action on Arduino
 "1"    | AC ON      | LED turns ON
-"2"    | AC OFF     | LED turns OFF
-"3"    | FAN MODE   | LED blinks
-"4"    | RESET      | LED turns OFF (reset)
+  ,"2"    | AC OFF     | LED turns OFF
+  ,"3"    | FAN MODE   | LED blinks
+  ,"4"    | RESET      | LED turns OFF (reset)
 
 ---
 
