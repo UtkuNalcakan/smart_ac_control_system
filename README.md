@@ -2,8 +2,7 @@ Smart AC Control System
 
 📌 Description
 
-This project is a smart air conditioner control system developed using Java Swing GUI and Arduino.
-The system allows users to control the AC remotely via a graphical interface and receive feedback from the hardware.
+This project is a smart air conditioner control system developed using Java Swing GUI and Arduino. The system allows users to control the AC via a graphical interface and receive real-time feedback from the hardware through serial communication.
 
 ---
 
@@ -11,7 +10,7 @@ The system allows users to control the AC remotely via a graphical interface and
 
 - Java (Swing GUI)
 - Arduino
-- Serial Communication (USB)
+- Serial Communication (USB / COM Port)
 
 ---
 
@@ -21,41 +20,11 @@ The system allows users to control the AC remotely via a graphical interface and
 - AC OFF → LED turns OFF
 - Fan Mode → LED blinks
 - Reset → System resets (LED OFF)
+- Real-time status feedback displayed in GUI
 
 ---
 
-🔌 Communication Protocol
-
-Commands sent from Java to Arduino:
-
-- "1" → AC ON (LED ON)
-- "2" → AC OFF (LED OFF)
-- "3" → FAN MODE (LED BLINK)
-- "4" → RESET (LED OFF)
-
----
-
-📡 Status Feedback
-
-Arduino sends back status messages to the Java GUI.
-
-Examples:
-
-- "AC ON"
-- "AC OFF"
-- "FAN MODE"
-- "RESET"
-
----
-
-💡 How it works
-
-The Java application sends commands to Arduino via serial communication.
-Arduino reads these commands, controls the LED accordingly, and sends back status messages to the GUI.
-
----
-
-🔧 Hardware Setup
+🔌 Hardware Setup
 
 - Arduino Uno
 - LED
@@ -64,34 +33,85 @@ Arduino reads these commands, controls the LED accordingly, and sends back statu
 
 ---
 
-▶️ How to Run
+⬆️ How to Upload Arduino Code
 
-1. Connect Arduino to the computer via USB.
-2. Upload the Arduino code using Arduino IDE.
-3. Close Arduino IDE.
-4. Run the Java application.
-5. Select the correct COM port.
-6. Use the GUI buttons to control the system.
+1. Open Arduino IDE
+2. Select the correct board (Arduino Uno)
+3. Select the correct COM port
+4. Upload the ".ino" file
 
 ---
-## 🖥️ GUI Screenshot
+
+▶️ How to Run
+
+1. Connect Arduino to the computer via USB
+2. Upload the Arduino code
+3. Close Arduino IDE
+4. Run the Java application
+5. Select the correct COM port
+6. Use the GUI buttons to control the system
+
+---
+
+📡 Communication Protocol
+
+The system uses a simple serial communication protocol between the Java GUI and the Arduino via USB (COM port). Each command is sent as a single character.
+
+🔹 Commands (Java → Arduino)
+
+Command| Description| Action on Arduino
+"1"    | AC ON      | LED turns ON
+"2"    | AC OFF     | LED turns OFF
+"3"    | FAN MODE   | LED blinks
+"4"    | RESET      | LED turns OFF (reset)
+
+---
+
+🔹 Responses (Arduino → Java)
+
+After executing a command, the Arduino sends back a status message:
+
+- "AC ON"
+- "AC OFF"
+- "FAN MODE"
+- "RESET"
+
+---
+
+🔹 Example Communication
+
+Java → Arduino: "1"
+Arduino → Java: "AC ON"
+
+Java → Arduino: "3"
+Arduino → Java: "FAN MODE"
+
+---
+
+🔹 Notes
+
+- Communication is done via Serial (USB)
+- Each message is sent as a single line
+- The GUI displays incoming messages in real-time
+
+---
+
+🖥 GUI Screenshot
 
 Below is the graphical user interface of the system:
 
-![GUI](gui.png.jpeg)
+"GUI" (gui.png.jpeg)
 
 ---
 
-📤 How to Upload Arduino Code
+💡 How It Works
 
-1. Open Arduino IDE.
-2. Select the correct board (Arduino Uno).
-3. Select the correct COM port.
-4. Upload the ".ino" file.
+The Java application sends commands to Arduino via serial communication. Arduino reads these commands, controls the LED accordingly, and sends back status messages to the GUI, which are displayed to the user.
 
 ---
 
 🎯 Purpose
 
-This project simulates a smart home air conditioning system with bidirectional communication between software and hardware.
+This project demonstrates bidirectional communication between software (Java GUI) and hardware (Arduino) using serial communication.
+
 
