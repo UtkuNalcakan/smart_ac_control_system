@@ -74,6 +74,13 @@ Arduino reads these commands, controls the LED accordingly, and sends back statu
 6. Use the GUI buttons to control the system.
 
 ---
+## 🖥️ GUI Screenshot
+
+Below is the graphical user interface of the system:
+
+![GUI](gui.png.jpeg)
+
+---
 
 📤 How to Upload Arduino Code
 
