@@ -96,7 +96,7 @@ It allows:
 ---
 
 ## 🖥️ GUI Screenshot
-![GUI](gui.png.jpeg)
+![GUI](gui.jpeg)
 
 ---
 
@@ -122,8 +122,8 @@ Users can control the AC states (ON, OFF, FAN, RESET) through a graphical interf
 ```
 .
 ├── ACControlGUI.java
-├── ac_control.arduino.ino
-├── gui.png.jpeg
+├── ac_control.ino
+├── gui.jpeg
 └── README.md
 ```
 
