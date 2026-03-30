@@ -122,8 +122,8 @@ Users can control the AC states (ON, OFF, FAN, RESET) through a graphical interf
 ```
 .
 ├── ACControlGUI.java
-├── smart_ac_control.ino
-├── gui_screenshot.jpeg
+├── ac_control.arduino.ino
+├── gui.png.jpeg
 └── README.md
 ```
 
