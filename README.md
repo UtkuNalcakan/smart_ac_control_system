@@ -123,7 +123,7 @@ Users can control the AC states (ON, OFF, FAN, RESET) through a graphical interf
 .
 ├── ACControlGUI.java
 ├── ac_control.ino
-├── gui.jpeg
+├── gui.png
 └── README.md
 ```
 
