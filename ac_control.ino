@@ -10,19 +10,29 @@ void loop() {
     char command = Serial.read();
 
     if (command == '1') {
-      digitalWrite(led, HIGH); // AC ON
+      digitalWrite(led, HIGH);
+      Serial.println("AC ON");
     }
     else if (command == '2') {
-      digitalWrite(led, LOW); // AC OFF
+      digitalWrite(led, LOW);
+      Serial.println("AC OFF");
     }
     else if (command == '3') {
-      digitalWrite(led, HIGH); // FAN MODE (yanıp sönebilir)
-      delay(300);
-      digitalWrite(led, LOW);
-      delay(300);
+      for (int i = 0; i < 5; i++) {
+        digitalWrite(led, HIGH);
+        delay(300);
+        digitalWrite(led, LOW);
+        delay(300);
+      }
+      Serial.println("FAN MODE");
     }
     else if (command == '4') {
-      digitalWrite(led, LOW); // RESET
+      digitalWrite(led, LOW);
+      Serial.println("RESET");
+    }
+    else {
+      Serial.println("UNKNOWN COMMAND");
     }
   }
 }
+ 
