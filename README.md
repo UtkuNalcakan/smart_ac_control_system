@@ -96,7 +96,7 @@ It allows:
 ---
 
 ## 🖥️ GUI Screenshot
-![GUI](gui.jpeg)
+![GUI](gui.png)
 
 ---
 
